@@ -1,0 +1,86 @@
+.A{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.A-left{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 90%;
+   /* background-color: red; */
+}
+.A-right{
+    flex: 1;
+}
+.A-card{
+    width:88%;
+    height: 70vh;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.A-card.bg{
+    position: absolute;
+    top: 50px;
+    left:50px;
+    background-color: rgb(53, 48, 48);
+}
+.a-img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.A-award-img{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+.A-title{
+    font-weight: 400;
+}
+.A-sub{
+    margin: 20px 0px;
+}
+.A-desc{
+    font-weight: 300;
+}
+.A-award{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between
+}
+.A-award-texts{
+   width: 50%;
+}
+.A-award-title{
+    font-weight: bold;
+    color: #db6a6a;
+}
+
+
+@media screen and (max-width:480px) {
+    .A{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .A-left{
+        
+       width: 100%;
+    }
+    .A-card{
+         
+       height: 30vh;
+    }
+    .A-card.bg, .A-award{
+        display: none;
+    }
+    .A-right{
+        padding:20px;
+    }
+    
+} 
